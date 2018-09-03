@@ -22,6 +22,7 @@ class Orders extends Component {
       })
       .catch(err => {
         this.setState({loading: false});
+        return;
       });
   }
   
