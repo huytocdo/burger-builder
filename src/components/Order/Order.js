@@ -21,9 +21,7 @@ export default (props) => {
       border: '1px solid #ccc',
       padding: '5px'
     }
-
-    return 
-    <span key={ig.name} style={style}>{ig.name} ({ig.amount})</span>
+    return <span key={ig.name} style={style}>{ig.name} ({ig.amount})</span>
   })
   return (
     <div className={classes.Order}>
