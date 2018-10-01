@@ -1,4 +1,8 @@
 /node_modules
+/build
 package-lock.json
 yarn-error.log
 .vscode
+.firebase
+.firebaserc
+firebase.json
