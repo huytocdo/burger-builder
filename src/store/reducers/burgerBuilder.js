@@ -1,5 +1,5 @@
 import * as actionTypes from './../actions/actionTypes';
-import { updateObject } from './../ultility';
+import { updateObject } from './../../shared/ultility';
 
 const initialState = {
   ingredients: null,
@@ -38,9 +38,7 @@ const addIngredient = (state, action) => {
 
 const removeIngredient = (state, action) => {
   const updatedIng = {[action.ingredientName]: state.ingredients[action.ingredientName] - 1};
-  console.log(updatedIng);
   const updatedIngs = updateObject(state.ingredients, updatedIng);
-  console.log(updatedIngs);
   const updatedState = {
     ingredients: updatedIngs,
     totalPrice: state.totalPrice - INGREDIENT_PRICES[action.ingredientName],
